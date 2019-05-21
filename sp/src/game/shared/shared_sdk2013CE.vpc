@@ -1,0 +1,32 @@
+
+$Configuration
+{
+	$Compiler
+	{
+		$AdditionalIncludeDirectories "$BASE;$SRCDIR\game\shared\sdk2013ce;$(SolutionDir)\thirdparty"
+	}
+}
+
+
+$Project
+{
+	$Folder	"Source Files"
+	{
+		$Folder "SourceCE"
+		{
+			$File	"$SRCDIR\game\shared\SourceCE\scripto.h"
+			$File	"$SRCDIR\game\shared\SourceCE\scripto.cpp"
+			//$File	"$SRCDIR\game\shared\SourceCE\"
+		}
+	}
+	
+	$Folder "Header Files"
+	{
+		
+	}
+	
+	$Folder "Link Libraries"
+	{
+		$File "$SRCDIR\lib\public\scripto.lib"
+	}
+}
